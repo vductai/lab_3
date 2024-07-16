@@ -19,7 +19,7 @@
         @foreach($list as $item)
             <tr>
                 <th scope="row">{{$item->id_book}}</th>
-                <td><a href="/chitiet/{{$item->id_book}}">{{$item->title}}</a></td>
+                <td>{{$item->title}}</td>
                 <td>{{$item->thumbnail}}</td>
                 <td>{{$item->author}}</td>
                 <td>{{$item->publisher}}</td>
@@ -27,8 +27,8 @@
                 <td>{{number_format($item->price)}} đ</td>
                 <td>{{$item->quantity}}</td>
                 <td>{{$item->name}}</td>
-                <td>
-                    <a href="{{route('book.edit', $item->id_book)}}" class="btn btn-primary">
+                <td class="d-flex justify-content-center">
+                    <a href="{{route('book.edit', $item->id_book)}}" class="btn btn-primary mx-3">
                         Sửa
                     </a>
                     <form action="{{route('book.delete', $item->id_book)}}" method="post">
