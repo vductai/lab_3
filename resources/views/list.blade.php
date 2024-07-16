@@ -11,7 +11,7 @@
             <th scope="col">publication</th>
             <th scope="col">price</th>
             <th scope="col">quantity</th>
-            <th scope="col">category</th>
+            <th scope="col">category name</th>
             <th scope="col">Thao tác</th>
         </tr>
         </thead>
